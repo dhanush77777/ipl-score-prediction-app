@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link rel="stylesheet" href="styes.css">
+  <style>
+     body{
+  background-image:url('https://tse3.mm.bing.net/th?id=OIP.6MKVxWX4uNeVSeNMH7hHegHaEo&pid=Api&P=0&w=265&h=167');">
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+div{
+  color:orange;
+}
+
+ul{
+  color:white
+}
+h4{
+  color:white
+}
+  </style>
+</head>
+
+<body>
+  
+ <div class="login">
+	<h1>Predict 1st innings score</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    
+    	<form action="{{url_for('predict')}}"method="post">
+<input type="text" name="bat_team" placeholder="batting team" required="required" />
+<input type="text" name="bowl_team" placeholder="bowling team" required="required" />
+<input type="text" name="runs" placeholder="runs" required="required" />
+<input type="text" name="wickets" placeholder="wickets" required="required" />
+<input type="text" name="overs" placeholder="overs" required="required" />
+<input type="text" name="runs_last_5" placeholder="runs last 5 overs" required="required" />
+<input type="text" name="wickets_last_5" placeholder="wickets last 5 overs" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+ <h4>teams</h4>
+ <ul>
+ <li>enter 0 for csk</li>
+ <li>enter 1 for dc</li>
+ <li>enter 2 for kxip</li>
+ <li>enter 3 for kkr</li>
+ <li>enter 4 for mi</li>
+ <li>enter 5 for rr</li>
+ <li>enter 6 for rcb</li>
+ <li>enter 7 for srh</li>
+ </ul>
+
+
+</body>
+</html>
