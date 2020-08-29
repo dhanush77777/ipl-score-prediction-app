@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styes.css">
   <style>
      body{
-  background-image:url('https://tse3.mm.bing.net/th?id=OIP.6MKVxWX4uNeVSeNMH7hHegHaEo&pid=Api&P=0&w=265&h=167');">
+  background-image:url('https://blog.playo.co/wp-content/uploads/2017/03/cricket-grounds-in-bangalore.jpg');">
     background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
